@@ -1,0 +1,71 @@
+/*----------Card personalizado---------*/
+
+.div-producto {
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid var(--su-negroFondo);
+    height: 150px;
+    border-radius: 10px 5px 5px 10px;
+}
+
+.div-productos-seccion::after {
+    content: '';
+    width: 41.66%;
+}
+
+.thumb-img-producto {
+    width: 150px !important;
+    min-width: 150px !important;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.thumb-img-producto img {
+    width: 100%;
+}
+
+.thumb-text-producto {
+    height: 150px;
+    min-height: 150px;
+    width: calc(100%-150px);
+}
+
+.div-producto:hover {
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/*------------------*/
+
+.oculto {
+    display: none !important;
+}
+
+
+/*----------------keyframes------------*/
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*----------------MediaQueries-------------*/
+
+@media (max-width: 576px) {
+    .div-producto {
+        height: 100px;
+    }
+    .thumb-img-producto {
+        width: 100px !important;
+        min-width: 100px !important;
+    }
+    .thumb-text-producto {
+        height: 100px;
+        min-height: 100px;
+    }
+}

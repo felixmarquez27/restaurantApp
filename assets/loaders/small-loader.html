@@ -1,0 +1,27 @@
+<style>
+    .thumb-loader {
+        width: 100px;
+    }
+    
+    .thumb-loader img {
+        width: 100%;
+        animation-duration: 1s;
+        animation-name: girar;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes girar {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<div class="w-100 h-100 position-fixed d-flex align-items-center justify-content-center oculto" style="top:0px;left:0px;z-index:100" id="loaderUser">
+    <div class="thumb-loader">
+        <img src="../assets/img/logo.PNG" alt="">
+    </div>
+</div>

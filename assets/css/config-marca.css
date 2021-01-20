@@ -1,0 +1,117 @@
+:root {
+    --su-negro: #25292f;
+    --su-negroFondo: #191716;
+    --su-amarillo: #dba817;
+    --su-gris: #f5f5f5;
+    --su-naranja: #c4891a;
+}
+
+body {
+    background-color: var(--su-negroFondo);
+    font-family: 'Arvo', serif;
+    /*
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-su-negro {
+    color: var(--su-negro);
+}
+
+.text-su-negro-fondo {
+    color: var(--su-negroFondo);
+}
+
+.text-su-amarillo {
+    color: var(--su-amarillo);
+}
+
+.text-su-gris {
+    color: var(--su-gris);
+}
+
+.text-su-naranja {
+    color: var(--su-naranja);
+}
+
+.bg-su-negro-fondo {
+    background-color: var(--su-negroFondo);
+}
+
+.bg-su-amarillo {
+    background-color: var(--su-amarillo);
+}
+
+.fs-1 {
+    font-size: calc(0.3vw + 0.3em);
+}
+
+.fs-2 {
+    font-size: calc(0.2vw + 0.6em);
+}
+
+.fs-3 {
+    font-size: calc(0.7vw + 0.7em);
+}
+
+.fs-4 {
+    font-size: calc(2vw + 0.6em);
+}
+
+.fs-5 {
+    font-size: calc(2vw + 1em);
+}
+
+.btn-outline-su-amarillo {
+    color: var(--su-amarillo);
+    border-color: var(--su-amarillo);
+}
+
+.btn-outline-su-amarillo:hover {
+    color: var(--su-gris);
+    background-color: var(--su-amarillo);
+}
+
+.btn-amarillo {
+    color: var(--su-gris);
+    background-color: var(--su-amarillo);
+}
+
+.btn-negro {
+    color: var(--su-gris);
+    background-color: var(--su-negro);
+}
+
+
+/*-----------------------------------------*/
+
+.pestania-activa {
+    color: var(--su-negroFondo) !important;
+    background-color: var(--su-amarillo) !important;
+    border: var(--su-amarillo) !important;
+}
+
+
+/*-----------------------*/
+
+.absolute-inf-der {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
+
+/*-----------------------------*/
+
+.text-truncado-2lineas {
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
